@@ -1,0 +1,10 @@
+# Railway deployment config
+# This tells Railway how to run your script continuously in the cloud
+
+[build]
+builder = "NIXPACKS"
+
+[deploy]
+startCommand = "python scout.py"
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 10
